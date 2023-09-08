@@ -48,7 +48,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 80px;
-    /* padding-top: 100px; */
+    padding-top: 50px;
 }
 
 .container {
@@ -107,18 +107,17 @@ nav a:hover {
 
 
 
-/* first page */
+/* profile section */
 .myimage{
     width: 40%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .myimage img {
-    width: 100%;
-    justify-content: center;
-    /* box-shadow: 1px -2px 9px 10px ; */
-    /* background: linear-gradient(187deg, #fbfefb 22%, #d0b8ac 96% ); */
-    border-radius: 50%;
-    padding: 20px;
+    width: 90%;
+    /* padding: 20px; */
     animation-delay: 0.5s;
 }
 
@@ -127,10 +126,8 @@ nav a:hover {
         
 
 .image-aside {
-    /* display: flex; */
-    /* flex-shrink: 4; */
     text-align: center;
-    width: 40%;
+    width: 40%;  
 }
 
 .name-heading h4 {
@@ -208,7 +205,7 @@ nav a:hover {
 
 
 
-/* Education */
+/* Education section */
 
 .education-container{
     display: flex;
@@ -216,7 +213,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding-top: 80px;
+    padding-top: 180px;
 }
 
 
@@ -228,12 +225,17 @@ nav a:hover {
     
 }
 
-/* .degree-class {
+.degree-class {
     width: 55%;
-} */
+}
 
 .col-1 {
     width: 25%;
+    background-color: #aeadad;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px 9px ;
+
+
     /* align-items: center; */
 }
 
@@ -250,6 +252,7 @@ nav a:hover {
 
 .col-1 img {
     width: 100%;
+    padding: 20px;
 }
 
 .col-2 {
@@ -268,15 +271,12 @@ nav a:hover {
 
 /* Skills */
 
-#skills{
-    /* position: relative; */
-}
 
 .skills-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 80px;
     padding-top: 80px;
 }
@@ -290,40 +290,38 @@ nav a:hover {
     
 }
 
-.checkmark img{
-    width: 30px;
-    
-}
-
-.mini-heading h2{
+.skills-box h2{
     padding: 20px;
-}
-
-.mini-heading{
-    flex: 1;
-    width: 40%;
-    border: 2px solid #555;
-    border-radius: 20px;
     text-align: center;
-    padding: 20px;
+}
+
+.checkmark img{
+    width: 30px;    
 }
 
 .skills-box{
+    width: 40%;
+    height: auto;
+    min-height: 300px;
+    border: 2px solid #686767;
+    border-radius: 20px;
+    /* max-height: 330px; */
+}
+
+.tech-skills,.other-skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: initial; 
-    gap: 2rem;
-    /* box-sizing: content-box; */
-    /* height: 200px; */
-
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
 }
 
 .checkmark{
     display: flex;
-    width: 14rem;
+    width: 12rem;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
     
     /* justify-content: space-around; */
 
@@ -363,17 +361,44 @@ nav a:hover {
 
 /* Projects */
 
+#projects button{
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    animation-delay: 2s;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#projects button:hover {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
 .projects-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 50px;
     padding-top: 80px;
 }
 
+.projects-container h2{
+    font-weight: 700;
+}
+
+
 .projects-container img{
-    width: 270px;
+    width: 100%;
+    /* width: 270px; */
     height: 300px;
     border-radius: 50px;
     
@@ -382,9 +407,82 @@ nav a:hover {
 .project-1,
 .project-2,
 .project-3{
-    width: 26.6%;
+    width: 26%;
     border: 2px solid black;
     border-radius: 50px;
     padding: 30px;
     text-align: center;
 }
+
+
+/* Contact section */
+#contact img{
+    width: 35px;
+    
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 80px;
+    margin-top: 30px;
+}
+
+.contact-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    border-radius: 20px;
+    border: 2px solid #555;
+    padding: 30px;
+    font-size: 1.5rem;
+    
+}
+
+.contact-me a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 10px;
+    
+}
+
+.contact-me a:hover{
+    border-bottom: 3px solid #555;
+    border-radius: 10px;
+    /* transition: 1s ease-in;   */
+}
+
+
+/* Footer */
+
+.footer-container{
+     margin-top:180px;
+}
+
+.copyright{
+    color: #686767;
+    display: flex;
+    justify-content: center;
+}   
+
+
+/* Arrow */
+
+.up-arrow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.up-arrow img{
+    cursor:pointer;
+}
+
+
+

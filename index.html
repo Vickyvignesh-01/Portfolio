@@ -45,7 +45,7 @@
                 <div class="about-btn">
                     <button class="animation" onclick="window.open('./images/Resume.pdf')"
                         target="_blank">Resume</button>
-                    <button class="animation" onclick="location.href = './#education'" target="_blank">Contact</button>
+                    <button class="animation" onclick="location.href = './#education'">Contact</button>
                 </div>
 
                 <div class="about-gitlinks">
@@ -102,9 +102,9 @@
             <p class="heading">Skills</p>
         </div>
         <div class="skills-container">
-            <div class="mini-heading">
+            <div class="skills-box">
                 <h2>Technical Skills</h2>
-                <div class="skills-box">
+                <div class="tech-skills">
                     <div class="checkmark">
                         <img src="./images/checkmark.png">
                         <div class="star">
@@ -155,36 +155,37 @@
 
                 </div>
             </div>
-            <div class="mini-heading">
+            <div class="skills-box">
                 <h2>Other Skills</h2>
-                <div class="skills-box">
+                <div class="other-skills">
                     <div class="checkmark">
                         <img src="./images/checkmark.png">
                         <div class="star">
                             <p>Git</p>
                         </div>
                     </div>
-                        <div class="checkmark">
-                            <img src="./images/checkmark.png">
-                            <div class="star">
-                                <p>MS word</p>
-                            </div>
+                    <div class="checkmark">
+                        <img src="./images/checkmark.png">
+                        <div class="star">
+                            <p>MS word</p>
                         </div>
-                        <div class="checkmark">
-                            <img src="./images/checkmark.png">
-                            <div class="star">
-                                <p>Mobile Editing</p>
-                            </div>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./images/checkmark.png">
+                        <div class="star">
+                            <p>Mobile Editing</p>
                         </div>
-                        <div class="checkmark">
-                            <img src="./images/checkmark.png">
-                            <div class="star">
-                                <p>Java</p>
-                            </div>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./images/checkmark.png">
+                        <div class="star">
+                            <p>Java</p>
                         </div>
+                    </div>
 
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="projects">
@@ -193,25 +194,64 @@
         </div>
         <div class="projects-container">
             <div class="project-1">
-                <img src="./images/to-do-list.png">
+                <img src="./images/notes2.png">
                 <h2>To Do List app</h2>
-                <button>Github</button>
-                <button>Live Demo</button>
+                <button onclick="location.href='https://github.com/Vickyvignesh-01/To-Do-List-App'">Github</button>
+                <button onclick="location.href='https://vickyvignesh-01.github.io/To-Do-List-App/'">Live Demo</button>
             </div>
             <div class="project-2">
-                <img src="./images/weatherapp.png">
+                <img src="./images/weather no edit.png">
                 <h2>Weather app</h2>
-                <button>Github</button>
-                <button>Live Demo</button>
+                <button onclick="location.href='https://github.com/Vickyvignesh-01/Weather-App'"
+                    target="_blank">Github</button>
+                <button onclick="location.href='https://vickyvignesh-01.github.io/Weather-App/'" target="_blank">Live
+                    Demo</button>
 
             </div>
             <div class="project-3">
-                <img src="./images/calculator2.png">
+                <img src="./images/calculator no edit.png">
                 <h2>Calculator</h2>
-                <button>Github</button>
-                <button>Live Demo</button>
+                <button onclick="location.href='https://github.com/Vickyvignesh-01/Calculator-App'">Github</button>
+                <button onclick="location.href='https://vickyvignesh-01.github.io/Calculator-App/'">Live Demo</button>
             </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <div class="up-arrow">
+            <img src="./images/up-arrow.png" onclick="location.href = '#desktop-nav'" title="Go to top">
+        </div>
+        <div>
+            <p class="heading">Contact me</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="contact-me">
+                    <a href="mailto:vickie7210@gmail.com" target="_blank">
+                        <img src="./images/email.png" alt="githublink" class="animation">vickie7210@gmail.com
+                    </a>
+                </div>
+                <div class="contact-me">
+                    <a href="https://linkedin.com/" target="_blank">
+                        <img src="./images/email.png" alt="githublink" class="animation">Linkedin
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <nav id="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#desktop-nav">Top</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © 2023 Vignesh. All Rights Reserved</p>
+            </div>
+        </footer>
     </section>
 
 </body>
