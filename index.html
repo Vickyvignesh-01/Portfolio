@@ -25,13 +25,29 @@
     </nav>
 
     <nav id="phone-nav">
+        <div>
+            <h1>Portfolio</h1>
+        </div>
+        <div class="nav-bar">
+            <div class="threelines" onclick="togglefunc()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
+            <ul class="hamburger-links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
 
     <!-- Front Page -->
     <section id="profile">
-        <div class="container-nav">
+        <div class="profile-container">
             <div class="myimage ">
                 <img src="./images/vignesh1.png" alt="My image" class="animation">
             </div>
@@ -189,6 +205,7 @@
     </section>
 
     <section id="projects">
+
         <div>
             <p class="heading">Projects</p>
         </div>
@@ -253,6 +270,15 @@
             </div>
         </footer>
     </section>
+
+    <script>
+        function togglefunc() {
+            const menu = document.querySelector(".hamburger-links");
+            const icon = document.querySelector(".threelines");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
 
 </body>
 
