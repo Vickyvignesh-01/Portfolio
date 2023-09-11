@@ -140,37 +140,37 @@ nav a:hover {
 }
 
 
-  .hamburger-links li {
+.hamburger-links li {
     list-style: none;
-  }
+}
 
-  .hamburger-links.open {
+.hamburger-links.open {
     max-height: 300px;
-  }
-  
-  .threelines.open span:first-child {
+}
+
+.threelines.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
-  }
-  
-  .threelines.open span:nth-child(2) {
+}
+
+.threelines.open span:nth-child(2) {
     opacity: 0;
-  }
-  
-  .threelines.open span:last-child {
+}
+
+.threelines.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
-  }
-  
-  .threelines span:first-child {
+}
+
+.threelines span:first-child {
     transform: none;
-  }
-  
-  .threelines span:first-child {
+}
+
+.threelines span:first-child {
     opacity: 1;
-  }
-  
-  .threelines span:first-child {
+}
+
+.threelines span:first-child {
     transform: none;
-  }
+}
 
 
 /* profile section */
@@ -183,6 +183,7 @@ nav a:hover {
     gap: 80px;
     padding-top: 50px;
 }
+
 .myimage {
     width: 40%;
     display: flex;
@@ -360,7 +361,7 @@ nav a:hover {
     align-items: center;
     gap: 50px;
     padding-top: 130px;
-    
+
 
 }
 
@@ -537,6 +538,7 @@ nav a:hover {
     color: #686767;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -646,24 +648,26 @@ nav a:hover {
         flex-direction: column;
     }
 
-    .col-1{
+    .col-1 {
         width: 19%;
     }
-    .col-1 img{
-        padding: 10px;  
+
+    .col-1 img {
+        padding: 10px;
     }
 
     .degree-class {
         width: 100%;
     }
 
- 
+
 
     /* Skills */
 
     .skills-box p {
         font-size: 1.2rem;
     }
+
     .other-skills {
         row-gap: 52.8px;
     }
@@ -673,24 +677,38 @@ nav a:hover {
 
 @media screen and (max-width:750px) {
 
+
+    /* section */
+    #projects {
+        width: 80%;
+        height: 194vh;
+        padding-top: 6vh;
+        margin: 0 10%;
+    }
+
     /* profile */
 
-    .profile-container{
+    .profile-container {
         gap: 40px;
-        padding-top:0px ;
+        padding-top: 0px;
     }
 
-    .myimage img{
-        width: 40%; 
+    .myimage img {
+        width: 40%;
     }
 
-    .myimage{
+    .myimage {
         width: 100%;
+    }
+
+    /* skills */
+    .skills-box {
+        height: 450px;
     }
 
     /* project */
 
-    .projects-container{
+    .projects-container {
         flex-wrap: wrap;
         gap: 20px;
     }
@@ -699,10 +717,81 @@ nav a:hover {
     .project-1,
     .project-2,
     .project-3 {
-        width:50%;
-        /* margin-bottom: 20%; */
+        width: 70%;
+        flex-wrap: wrap;
 
     }
 
 
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    .heading {
+        font-size: 1.7rem;
+    }
+    /* Education */
+    .education-container {
+        font-size: 0.8rem;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-1 {
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    .col-1 img {
+        padding: 8px;
+    }
+
+
+/* Skills */
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.skills-box{
+    width: 80%;
+    min-height: auto;
+
+}
+.skills-box h2 {
+    padding: 10px;
+    
+}
+
+
+.other-skills,.tech-skills{
+    row-gap: 15px;
+}
+
+
+/* contact */
+.contact-details{
+    padding: 15px;
+    font-size: 1.2rem;
+    gap: 30px;
+    border-radius: 15px;
+}
+    
 }
