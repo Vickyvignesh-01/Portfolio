@@ -732,6 +732,28 @@ nav a:hover {
     .heading {
         font-size: 1.7rem;
     }
+
+    /* hamburger nav */
+    .hamburger-links a {
+        font-size: 1.2rem;
+    }
+
+    /* Profile */
+
+    .myimage {
+        width: 50%;
+    }
+
+    .myimage img {
+        width: 100%;
+    }
+
+    .image-aside {
+        width: 100%;
+    }
+
+
+
     /* Education */
     .education-container {
         font-size: 0.8rem;
@@ -761,37 +783,78 @@ nav a:hover {
     }
 
 
-/* Skills */
+    /* Skills */
 
-.skills-container{
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    gap: 20px;
-}
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 20px;
+        padding-top: 20px;
 
-.skills-box{
-    width: 80%;
-    min-height: auto;
+    }
 
-}
-.skills-box h2 {
-    padding: 10px;
+    .skills-box {
+        width: 100%;
+        min-height: auto;
+
+    }
+
     
-}
+    .checkmark {
+        width: 8.7rem;
+    }
+
+    .skills-box h2 {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    .skills-box p {
+        font-size: 1.1rem;
+    }
 
 
-.other-skills,.tech-skills{
-    row-gap: 15px;
-}
+    .other-skills,
+    .tech-skills {
+        row-gap: 15px;
+    }
 
+    .checkmark img {
+        width: 24px;
+    }
 
-/* contact */
-.contact-details{
-    padding: 15px;
-    font-size: 1.2rem;
-    gap: 30px;
-    border-radius: 15px;
-}
-    
+    .star img {
+        width: 18px !important;
+    }
+
+    /* projects */
+    #projects button {
+        font-size: 1rem;
+    }
+
+    .projects-container {
+        height: auto;
+    }
+
+    .projects-container img {
+        height: 250px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        width: 90%;
+        flex-wrap: wrap;
+
+    }
+
+    /* contact */
+    .contact-details {
+        padding: 15px;
+        font-size: 1.2rem;
+        gap: 30px;
+        border-radius: 15px;
+    }
+
 }
