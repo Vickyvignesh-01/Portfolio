@@ -262,12 +262,12 @@ nav a:hover {
     color: black;
 }
 
-/* 
+
 .animation{
     opacity: 0;
     transform:translateY(30px);
     animation: moveup 0.5s linear forwards;
-} */
+}
 
 @keyframes moveup {
     100% {
@@ -531,12 +531,13 @@ nav a:hover {
 /* Footer */
 
 .footer-container {
-    margin-top: 180px;
+    margin-top: 180px;  
 }
 
 .copyright {
     color: #686767;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
 }
