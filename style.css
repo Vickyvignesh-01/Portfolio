@@ -183,7 +183,7 @@ nav a:hover {
     justify-content: center;
     gap: 80px;
     padding-top: 50px;
-    z-index:99;
+    z-index: 99;
 
 }
 
@@ -266,9 +266,9 @@ nav a:hover {
 }
 
 
-.animation{
+.animation {
     opacity: 0;
-    transform:translateY(30px);
+    transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
 
@@ -534,14 +534,14 @@ nav a:hover {
 /* Footer */
 
 .footer-container {
-    margin-top: 180px;  
+    margin-top: 180px;
 }
 
 .copyright {
     color: #686767;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
     text-align: center;
 }
 
@@ -676,6 +676,10 @@ nav a:hover {
         row-gap: 52.8px;
     }
 
+/* footer */
+    .footer-container {
+        margin-top: 250px;
+    }
 }
 
 
@@ -804,7 +808,7 @@ nav a:hover {
 
     }
 
-    
+
     .checkmark {
         width: 8.7rem;
     }
@@ -861,4 +865,36 @@ nav a:hover {
         border-radius: 15px;
     }
 
+}
+
+
+@media screen and (max-width:390px) {
+    /* Profile */
+
+    .myimage {
+        width: 72%;
+    }
+
+    .myimage img {
+        width: 100%;
+    }
+
+
+    .checkmark{
+        width: 10rem ;
+    }
+
+    .other-skills,
+    .tech-skills {
+        row-gap: 10px;
+    }
+
+    .skills-box h2 {
+        padding: 5px;
+    }
+
+    .projects-container {
+        padding-top: 50px;
+       
+    }
 }
